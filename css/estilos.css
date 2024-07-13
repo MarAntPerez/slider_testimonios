@@ -64,12 +64,18 @@ html {
   left: 50%;
   transform: translate(-50%, -50%);
   border: 0.1rem solid #fff;
+
+  /* Propiedad para que se vea un solo slide */
+  overflow: hidden;
 }
 
 .slider {
   height: 100%;
   width: 500%;
   display: flex;
+
+  /* Estilo para la animacion de pase de slide */
+  transition: all 0.8s cubic-bezier(0, 0, 0, 1);
 }
 
 .slide {
@@ -84,7 +90,7 @@ html {
   position: absolute;
   top: 50%;
   left: 50%;
-  transform: translate(-50%, -50%) rotate(-6deg);
+  transform: translate(-50%, -50%) rotateZ(-6deg);
   border-radius: 2rem;
   opacity: 0.7;
 }
